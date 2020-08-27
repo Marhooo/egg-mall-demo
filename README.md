@@ -1,4 +1,12 @@
 # eggproject1
+###'0827 20:50 管理Admin登入实现'
+>- 数据迁移参考egg文档：[数据迁移](https://eggjs.org/zh-cn/tutorials/sequelize.html)
+>- 关于数据迁移migrations中js文件里的```const uuidv1 = require("uuid/v1")```这段代码，在新版本uuid中是无法实现的，解决办法可以```npm install uuid@3.3.3```
+>- ```npm install --save-dev sequelize-cli```安装sequelize文件迁移脚手架到开发环境中，或者可以全局安装
+
+
+
+
 
 
 
