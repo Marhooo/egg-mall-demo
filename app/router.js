@@ -5,5 +5,9 @@
  */
 module.exports = app => {
   const { router, controller } = app;
-  router.get('/', controller.home.index);
+  const { user } = controller;
+
+
+  //管理端admin
+  router.post('/user/login', user.common.login)
 };

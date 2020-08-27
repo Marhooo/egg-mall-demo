@@ -28,3 +28,5 @@ class UserCommonController extends Controller {
     this.success(result);
   }
 }
+
+module.exports = UserCommonController

@@ -7,8 +7,19 @@ module.exports = {
   dayTimeFormat: "%Y-%m-%d %H:%i:%s",
 
 
-
-  
+  // 获取排序条件数组
+  getSortInfo(sort) {
+    return _.isEmpty(sort) ? [['createdTime', 'DESC']] : sort;
+  },
+  // create所需的一些公共字段
+  getCrateInfo(creatorId, creatorName) {
+    return {
+      creatorId,
+      creatorName,
+      lastModifierId: creatorId,
+      lastModifierName: creatorName,
+    };
+  },
   // modify所需的一些公共字段
   getModifyInfo(modifyId, modifyName) {
     return {

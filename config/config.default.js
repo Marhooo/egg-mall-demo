@@ -15,6 +15,13 @@ module.exports = appInfo => {
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1598251665346_2604';
 
+  // 小程序只能存storage，关闭csrf
+  config.security = {
+    csrf: {
+      enable: false,
+    },
+  },
+
   config.mysql = {
     client: {
       host: '127.0.0.1',
