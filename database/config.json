@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "cgz123456",
+    "database": "eggproject_koda",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "eggproject_koda",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "eggproject_koda",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
