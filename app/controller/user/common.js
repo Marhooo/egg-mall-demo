@@ -27,6 +27,14 @@ class UserCommonController extends Controller {
     ctx.setToken(result);
     this.success(result);
   }
+
+  //注销
+  logout(){
+    this.ctx.removeToken();
+    this.success();
+  }
+
+  
 }
 
 module.exports = UserCommonController

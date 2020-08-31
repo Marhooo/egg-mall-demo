@@ -31,4 +31,9 @@ module.exports = {
     this.cookies.set("userType", userType, cookieConfig);
     this.cookies.set("orgUuid", orgUuid || userUuid, cookieConfig);
   },
+
+  //移除token
+  removeToken() {
+    this.cookies.set('token', null);
+  },
 };
